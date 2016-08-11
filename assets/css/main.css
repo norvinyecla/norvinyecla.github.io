@@ -7,8 +7,8 @@
  */
 
 body {
-  background-color: #f2f2f2;
-    font-family: "Noto Serif", serif;
+  	background-color: #f2f2f2;
+	font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 16px;
     color: #555;
@@ -19,9 +19,17 @@ body {
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Oxygen', sans-serif;
     font-weight: 300;
     color: #333;
+}
+
+h1 {
+	font-weight: 600;
+}
+
+h3 {
+	font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -50,7 +58,7 @@ a {
 a:hover,
 a:focus {
     color: #7b7b7b;
-    text-decoration: none;
+    text-decoration: underline;
     outline: 0;
 }
 
@@ -137,12 +145,13 @@ a:after {
 	}
 
 	#section-topbar ul#nav .active a {
-		background: #44bbaa;
+		background: #1abc9c;
 		border-left: 1px solid #111;
 	}
 
 		#section-topbar ul#nav .active a:hover {
-			background: #44bbaa;
+			/*background: #44bbaa;*/
+			background: #1abc9c;
 		}
 #section-topbar i {
 	font-size: 25px;
@@ -155,11 +164,11 @@ a:after {
 #headerwrap {
 	background: url(../img/header-bg.jpg) no-repeat center top;
 	margin-top: 60px;
-	padding-top:140px;
+	padding-top:100px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 500px;
+	min-height: 550px;
 	width: 100%;
 	
     -webkit-background-size: 100%;
@@ -183,7 +192,7 @@ a:after {
 	color: white;
 }
 
-/* Intnro Wrap */
+/* Intro Wrap */
 
 #intro {
 	background: #303538;
@@ -204,14 +213,14 @@ a:after {
 }
 
 
-#skillswrap {
+#portfoliowrap {
 	background: #303538;
 	padding-top: 60px;
 	padding-bottom: 60px;
 	color: white;
 }
 
-#skillswrap h5, p {
+#portfoliowrap h5, p, a {
 	color: white;
 }
 
@@ -290,4 +299,20 @@ sm {
 .btn-custom {
 	background-color: #303538;
 	color: white;
+}
+
+.btn-custom:hover {
+	background-color: #f2f2f2;
+	color: #303538;
+}
+
+#profile {
+	max-width: 200px;
+	height: auto;
+	border: solid #1abc9c 0.2em;
+	border-radius: 50%;
+}
+
+.nav > li > a:focus {
+	background-color: #1abc9c;
 }
